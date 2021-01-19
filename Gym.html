@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA_compatible" content="ie=edge">
+    <title>SAGE GYM</title>
+</head>
+<link rel="stylesheet" href="css/style.css">
+<style>
+    body{
+        margin:0px;
+        padding:0px;
+        background:url('imag/gym.png');
+        /* ^ url is image ka path jisme image ka path de skte ho wo background aaa jayengi */
+        color:white;
+        background-repeat: no-repeat;
+        background-size:cover ;
+        /* ^background img rescale based on the container's size */
+        /* background-image: ('folder name/image name.jpg yaa png jis v type ki ho wo');
+        #(^location of img) */
+        /* opacity:0.3;
+        (^ye opacity tag transporant kr deta h pure text ko or image piche ki bhi dikhti h) or is transporant ko dark or light v kr skte h 0.1 karoge to km transporant thoda dark rahega ,0.5 jyada transporant ho jaata h  */
+
+      
+    }
+    .left{
+        display: inline-block;
+        position: absolute;
+        left:34px;
+        top:20px;
+        /* margin:;o
+        padding:; */
+/* border:2px solid red; */
+        
+    }
+    .mid{
+        /* tin condition margin auto ki wjh s agr center krna ho to pahli h display block kro then width set karo then margin auto krna hota h  */
+        display:block;
+        width:63%;
+        margin:20px auto;
+        /* padding:; */
+        /* border:2px solid red; */
+    }
+    .right{
+        position: absolute;
+        right:2px;
+        top:33px;
+        /* margin:;
+        padding:; */
+        display: inline-block;
+        /* border:2px solid red; */
+    }
+    .navbar{
+        /* inline-block m inline v rhta h & we can set width or height too  */
+        display:inline-block;
+    }
+    .navbar li{
+        display:inline-block;
+        font-size: 25px;
+
+    }
+    .navbar li a{
+        color:white;
+        text-decoration: none;
+        padding: 14px;
+    }
+    
+    .navbar li a:hover, .navbar li a:active{
+        color:gray;
+        text-decoration: underline;
+        
+        
+    }
+    .left img{
+        width:99px;
+                       
+    }
+    .left div{
+        text-align: center;
+        font-size:20px;
+        line-height: 19px;
+    }
+    .btn{
+        margin:0px 1px;
+        color:white;
+        background-color: black;
+        padding:4px 14px;
+        border: 2px solid grey;
+        border-radius: 6px;
+        font-size: 15px;
+        /* for cursor pointer  */
+        cursor:pointer;
+    }
+    .btn:horver{
+        background-color:rgb(94, 91, 91);
+    }
+    .container{
+        /* border: 2px solid rgb(51, 50, 50); */
+        margin:49px 6px;
+        padding:75px;
+        width: 28% ;
+        border-radius: 28px;
+    }
+    .form-group input{
+        text-align: center;
+        display:block;
+        width:270px;
+        padding:1px;
+        border:2px solid black;
+        border-radius:5px ;
+        margin:11px auto;
+        font-size:15px ;
+    }
+    .container h1{
+text-align: center;
+color:maroon;
+    }
+    .container button{
+        display:block;
+        width:203px ;
+        margin: 20px auto;
+    }
+</style>
+<body>
+    <header class="yup">
+        <!-- left box for logo -->
+        <div class="left">
+       <img src="imag/logo.png" alt="Error"> 
+        <div>Sage Fitness</div>
+        </div>
+        <!-- mid for navbar or navigation -->
+    <div class="mid">
+        <ul class="navbar">
+            <li><a href="/Home.html" class="active">Home</a></li>
+            <li><a href="#">About Us</a></li>
+            <li><a href="#">Fitness Calculator</a></li>
+            <li><a href="#">Contact Us</a></li>
+            
+                    </ul>
+        
+    </div>
+    <!-- ryt box for buttons -->
+    <div class="right">
+    <button class="btn">Call Us</button>
+    <button  class="btn">Email-Us</button>
+    </div>
+    </header>
+    <div class="container">
+<h1>Join the SAGE Gym  </h1>
+<form action="no action.php">
+{% comment %} <form method='post' action='gym.php' name='gymform' id='gymform'> i have tried to make this form in a working process {% endcomment %}
+
+    <div class="form-group">
+        <input type="text" name=""placeholder="Enter Your Name" required>
+    </div>
+    <div class="form-group">
+        <input type="text" name=""placeholder="Enter Your Age">
+    </div>
+    <div class="form-group">
+        <input type="text" name=""placeholder="Enter Your Gender">
+    </div>
+    <div class="form-group">
+        <input type="text" name=""placeholder="Enter Your Locality">
+    </div>
+    <div class="form-group">
+        <input type="text" name=""placeholder="Enter Your Email-Id">
+    </div>
+    <div class="form-group">
+        <input type="text" name=""placeholder="Enter Your Phone number">
+    </div>
+    <button class="btn">Submit</button>
+</form>
+    </div>
+
+</body>
+</html>
